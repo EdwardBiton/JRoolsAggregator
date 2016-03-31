@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.teedrei</groupId>
+	<artifactId>JRoolsAggregator</artifactId>
+	<version>1.0.0</version>
+	<packaging>pom</packaging>
+	<name>JRools Aggregator</name>
+	<description>JRools Aggregator</description>
+	<url>http://www.teedrei.com/JRools</url>
+	<modules>
+		<!-- core modules -->
+		<module>../JRools</module>
+		<module>../JRoolsSample</module>
+	</modules>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-eclipse-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<wtpversion>2.0</wtpversion>
+					<workspace>NULL</workspace>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>teedrei</id>
+			<name>teedrei-releases</name>
+			<url>http://maven.teedrei.com/libs-release-local</url>
+		</repository>
+	</distributionManagement>
+</project>
